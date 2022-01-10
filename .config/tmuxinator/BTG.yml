@@ -1,0 +1,150 @@
+# /home/odysseus/.config/tmuxinator/HTB.yml
+
+name: BTG
+root: /mnt/hgfs/DATA/Study/Infosec/HacktheBox/Battlegrounds/<%= @args[0] %>
+
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+on_project_first_start: mkdir /mnt/hgfs/DATA/Study/Infosec/HacktheBox/Battlegrounds/<%= @args[0] %>
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+on_project_stop: sudo pkill openvpn
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+windows:
+  - STATUS:
+      layout: 5332,320x62,0,0[320x27,0,0{54x27,0,0,0,45x27,55,0,6,102x27,101,0,2,116x27,204,0,3},320x34,0,28{156x34,0,28,1,163x34,157,28,7}]
+      # synchronize: after
+      panes:
+        - sudo openvpn file.ovpn
+        - sleep 10;ipi
+        - postweb
+        -  
+        - 
+        - 
+  - DEF-<%= @args[1] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - ssh root@<%= @args[1] %>
+        - P2:
+          - ssh root@<%= @args[1] %>
+        - P3:
+          - ssh root@<%= @args[1] %>
+        - P4:
+          - ssh root@<%= @args[1] %>
+  - DEF-<%= @args[2] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - ssh root@<%= @args[1] %>
+        - P2:
+          - ssh root@<%= @args[1] %>
+        - P3:
+          - ssh root@<%= @args[1] %>
+        - P4:
+          - ssh root@<%= @args[1] %>
+  - DEF-<%= @args[3] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - ssh root@<%= @args[2] %>
+        - P2:
+          - ssh root@<%= @args[2] %>
+        - P3:
+          - ssh root@<%= @args[2] %>
+        - P4:
+          - ssh root@<%= @args[2] %>
+  - DEF-<%= @args[4] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - ssh root@<%= @args[3] %>
+        - P2:
+          - ssh root@<%= @args[3] %>
+        - P3:
+          - ssh root@<%= @args[3] %>
+        - P4:
+          - ssh root@<%= @args[3] %>
+  - ATK-<%= @args[5] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - 
+        - P2:
+          - 
+        - P3:
+          -  
+        - P4:
+          - 
+  - ATK-<%= @args[6] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - 
+        - P2:
+          - 
+        - P3:
+          -  
+        - P4:
+          - 
+  - ATK-<%= @args[7] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - 
+        - P2:
+          - 
+        - P3:
+          -  
+        - P4:
+          - 
+  - ATK-<%= @args[8] %>:
+      layout: tiled
+      panes:
+        - P1:
+          - 
+        - P2:
+          - 
+        - P3:
+          -  
+        - P4:
+          - 
+  - MSFCONSOLE:
+      panes:
+        - P1:
+          - msfconsole

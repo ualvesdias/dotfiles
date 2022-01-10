@@ -1,0 +1,132 @@
+# /home/odysseus/.config/tmuxinator/HTB.yml
+
+name: HTB
+root: /mnt/hgfs/DATA/Personal/Study/Infosec/HacktheBox/<%= @args[0] %> 
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+on_project_first_start: mkdir /mnt/hgfs/DATA/Personal/Study/Infosec/HacktheBox/<%= @args[0] %>
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+on_project_stop: sudo pkill openvpn
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+windows:
+  - STATUS:
+      layout: 5332,320x62,0,0[320x27,0,0{54x27,0,0,0,45x27,55,0,6,102x27,101,0,2,116x27,204,0,3},320x34,0,28{156x34,0,28,1,163x34,157,28,7}]
+      # synchronize: after
+      panes:
+        - htbvpn  
+        - ipi 
+        - postweb
+        -  
+        - 
+        - 
+  - RECON01:
+      layout: 3dc1,320x59,0,0{160x59,0,0,9,159x59,161,0[159x29,161,0,10,159x29,161,30,11]}
+      panes:
+        - P1:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-RECON01-P1.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') RECON01 P1 $(whoami)
+          - clear
+        - P2:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-RECON01-P2.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') RECON01 P2 $(whoami)
+          - clear
+        - P3:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-RECON01-P3.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') RECON01 P3 $(whoami)
+          - clear
+  - RECON02:
+      layout: 3dc1,320x59,0,0{160x59,0,0,9,159x59,161,0[159x29,161,0,10,159x29,161,30,11]}
+      panes:
+        - P1:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-RECON02-P1.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') RECON02 P1 $(whoami)
+          - clear
+        - P2:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-RECON02-P2.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') RECON02 P2 $(whoami)
+          - clear
+        - P3:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-RECON02-P3.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') RECON02 P3 $(whoami)
+          - clear
+  - SCAN: 
+      layout: 3dc1,320x59,0,0{160x59,0,0,9,159x59,161,0[159x29,161,0,10,159x29,161,30,11]}
+      panes:
+        - P1:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-SCAN-P1.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') SCAN P1 $(whoami)
+          - clear
+        - P2:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-SCAN-P2.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') SCAN P2 $(whoami)
+          - clear
+        - P3:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-SCAN-P3.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') SCAN P3 $(whoami)
+          - clear
+  - CODE:
+      layout: main-vertical
+      panes:
+        - P1:
+          - vim
+        - P2:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-CODE-P2.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') CODE P2 $(whoami)
+          - clear
+  - SHELLS:
+      layout: tiled
+      panes:
+        - P1:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-SHELLS-P1.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') SHELLS P1 $(whoami)
+          - clear
+        - P2:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-SHELLS-P2.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') SHELLS P2 $(whoami)
+          - clear
+        - P3:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-SHELLS-P3.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') SHELLS P3 $(whoami)
+          - clear
+        - P4:
+          - cat ./5-logs/$(whoami)/tmuxlogs/$(tmux display-message -p '#S')-SHELLS-P4.log 2> /dev/null
+          - scTmux $(tmux display-message -p '#S') SHELLS P4 $(whoami)
+          - clear
+
+

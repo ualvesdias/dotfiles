@@ -1,0 +1,115 @@
+{
+  "main": {
+    "id": "3418bf35a1b7fb06",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0a46ad36142189c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Start here.md",
+            "mode": "source"
+          }
+        },
+        "group": "a1c23a01ac1328b1"
+      },
+      {
+        "id": "f92affff232cdf3b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Start here.md",
+            "mode": "preview"
+          }
+        },
+        "group": "a1c23a01ac1328b1"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fdd134f440be4a14",
+    "type": "split",
+    "children": [
+      {
+        "id": "e010bcf76791c144",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8839e8a44512dec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "93f51a5321678cfa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "af364daea5c591e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "10e15a4899cba7d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5894f14299aa67de",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Start here.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f92affff232cdf3b",
+  "lastOpenFiles": [
+    "Start here.md",
+    "Advanced topics/Using obsidian URI.md",
+    "Advanced topics/Drag and Drop.md",
+    "Advanced topics/Accepted file formats.md",
+    "Attachments/Slides demo.md",
+    "Customization/Appearance.md",
+    "Customization/Custom hotkeys.md",
+    "How to/Working with multiple cursors.md",
+    "How to/Embed files.md",
+    "Panes/Pane layout.md"
+  ]
+}
