@@ -249,15 +249,6 @@ function sshtunnel {
 	} && echo "The VPN over SSH tunnel is ready." || echo "Usage: sshtunnel <root@host> <local-ip> <remote-ip> <tun-number> <remote-iface> <internal-net> <internal-mask>" 
 }
 
-function locamount {
-	if [[ "$1" == "notes" ]]; then
-		sshfs -o allow_other,IdentityFile=/home/odysseus/.ssh/id_odysseus elastic:/home/opsec/Engagements/notes /home/odysseus/Documents/Work/Locaweb/LocaNotes
-	else
-	    mkdir -p /home/odysseus/Documents/Work/Locaweb/Engagements/$1
-    	sshfs -o allow_other,IdentityFile=/home/odysseus/.ssh/id_odysseus elastic:/home/opsec/Engagements/$1 /home/odysseus/Documents/Work/Locaweb/Engagements/$1
-	fi
-}
-
 function encmount {
     mkdir -p /home/odysseus/Documents/Work/Engagements/"$1"
     sshfs -v -o allow_other,IdentityFile=/home/odysseus/.ssh/id_odysseus "$2":/home/ubuntu/Engagements/"$1" /home/odysseus/Documents/Work/Engagements/"$1" || echo "Usage: encmount <container-name> <vps-alias>"
