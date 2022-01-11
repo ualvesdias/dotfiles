@@ -6,9 +6,14 @@ r
 super + Return
 	alacritty
 
+# renger file manager
+
+super + r
+    alacritty --hold -e ranger
+
 # program launcher
 super + d
-	rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/forest/scripts/rofi/launcher.rasi
+	rofi -combi-modi window#drun#run -show combi -show-icons -modi combi -no-config -no-lazy-grab -icons -theme ~/.config/rofi/themes/misc_blurry.rasi
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -25,6 +30,14 @@ super + alt + {q,r}
 # close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
+
+# Move focused node to the other monitor if theres no other node to swap
+# in the given direction
+
+super + shift + {h,j,k,l}
+	dir={west,south,north,east}; \
+	bspc node -s "$dir.local" --follow \
+	    || bspc node -m "$dir" --follow
 
 # alternate between the tiled and monocle layout
 super + m
