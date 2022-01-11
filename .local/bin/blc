@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mode="$1"
+device="$2"
+
+case $device in
+    "headphone")
+        bluetoothctl $mode 94:DB:56:7A:C5:2B
+        ;;
+    "mouse")
+        bluetoothctl $mode C8:5D:24:B4:4A:EB
+        ;;
+    *)
+        echo No device found
+        ;;
+esac
+

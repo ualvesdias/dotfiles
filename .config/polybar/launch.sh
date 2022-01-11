@@ -1,0 +1,1 @@
+/home/odysseus/dotfiles/.config/polybar/forest/launch.sh

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Workspaces
+bspc monitor eDP-1 -d misc chats music 4
+bspc monitor DP-3 -d misc term code 8 9 10
+
+bspc config border_width         2
+bspc config window_gap          16
+bspc config top_padding         15
+bspc config left_padding        0
+bspc config right_padding        0
+bspc config bottom_padding        0
+
+bspc config color_normal_border="#666666"
+bspc config color_active_border="#666666"
+bspc config color_focused_border="#00ff44"
+bspc config color_presel_feedback="#888888"
+
+bspc config split_ratio          0.61803398874989484820
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+${HOME}/.fehbg &
+${HOME}/.config/polybar/forest/launch.sh &
+compton &
+
+# polybar_config="$HOME/.config/polybar/config"
+# polybar_bars=(top)
+# 
+# if xrandr | grep -q "HDMI-1 connected"; then
+      # polybar_bars+=(ext_monitor)
+# fi
+
