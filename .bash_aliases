@@ -44,7 +44,7 @@ alias tnew="tmux new -c /mnt/hgfs/DATA -n MISC -s"
 alias ta="tmux a -t"
 alias tte="tmuxinator edit"
 alias tts="tmuxinator start"
-alias gitdots="cd ~/dotfiles; git add .; git commit -m 'update dotfiles'; git push -u origin main"
+alias gitdots="cd ~/dotfiles; git add .; git commit -m 'update dotfiles'; git push -u origin main; cd -"
 
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
