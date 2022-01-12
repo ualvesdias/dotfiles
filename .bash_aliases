@@ -20,7 +20,7 @@ alias update="sudo apt update && sudo apt full-upgrade"
 alias checkip="while :; do clear; curl ip-api.com; sleep 5; done"
 alias ipi="ifconfig| grep -Po -A1 '.*:(?= flags)|(?<=inet) ([0-9]{1,3}\.){3}[0-9]{1,3}'"
 alias ipe="curl ipinfo.io/ip"
-alias ls="exa -lh --icons  --classify --sort=ext --group-directories-first -S --color-scale"
+alias ls="exa -lh --icons  --classify --sort=ext --group-directories-first -S --color-scale --icons"
 alias lr="exa -lR  --classify --sort=ext --group-directories-first -S --color-scale"
 alias pyweb="python3 -m http.server "
 alias untar="tar -zxvf"
@@ -44,6 +44,7 @@ alias tnew="tmux new -c /mnt/hgfs/DATA -n MISC -s"
 alias ta="tmux a -t"
 alias tte="tmuxinator edit"
 alias tts="tmuxinator start"
+alias gitdots="cd ~/dotfiles; git add .; git commit -m 'update dotfiles'; git push -u origin main"
 
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
