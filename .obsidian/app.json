@@ -1,0 +1,19 @@
+{
+  "attachmentFolderPath": "0-admin/Execution/IndividualDocumentation/rafael/media",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "0-admin/Execution/IndividualDocumentation/odysseus/notes",
+  "strictLineBreaks": true,
+  "readableLineLength": false,
+  "foldHeading": true,
+  "vimMode": false,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": true,
+    "margin": "2",
+    "downscalePercent": 100
+  },
+  "showFrontmatter": true,
+  "showLineNumber": true
+}

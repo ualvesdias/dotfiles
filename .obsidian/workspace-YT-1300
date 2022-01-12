@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "a29aa2441bf9ac1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f69ccda7bb4495df",
+        "type": "split",
+        "children": [
+          {
+            "id": "45bd09aebfa3c1de",
+            "type": "leaf",
+            "dimension": 28.258706467661685,
+            "pinned": true,
+            "state": {
+              "type": "empty",
+              "state": {},
+              "pinned": true
+            }
+          },
+          {
+            "id": "bceb0df32772dfef",
+            "type": "split",
+            "dimension": 71.7412935323383,
+            "children": [
+              {
+                "id": "2a97b33180971b1d",
+                "type": "leaf",
+                "dimension": 22.987951807228914,
+                "pinned": true,
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "pinned": true
+                }
+              },
+              {
+                "id": "96c5c22bf33633d1",
+                "type": "leaf",
+                "dimension": 77.01204819277109,
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              }
+            ],
+            "direction": "vertical"
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "547a151ff4dcb221",
+    "type": "split",
+    "children": [
+      {
+        "id": "44e2f8852c691444",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9b0d2e1670fd1fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8463c26a9a91f689",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a5cedda72f21dd63",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "empty",
+              "state": {},
+              "pinned": true
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 425.5
+  },
+  "right": {
+    "id": "7ebf2a38a49ca104",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca69805ae180cee8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "931418912aa9a4d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6731789b175babc3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "06e220ba27d4d96f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "457f5705eb244017",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2a97b33180971b1d",
+  "lastOpenFiles": [
+    "0-admin/Execution/IndividualDocumentation/odysseus/notes/000 - Initial Information.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/_indexes/0000 - index.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/_indexes/0100 - Information gathering.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/notes/Tasks Control.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/_indexes/0600 - Web Testing.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/webtestingguide/www2/owasp-kanban.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/notes/insecure deserialization on www2.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/webtestingguide/www2/WSTG-CONF-04 - Review Old Backup and Unreferenced Files for Sensitive Information.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/notes/Sessão meterpreter no portalcte via primefaces.md",
+    "0-admin/Execution/IndividualDocumentation/padawan/webapps/cte/vulns/001_RCE_PrimeFaces/info.md"
+  ]
+}

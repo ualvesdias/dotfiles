@@ -1,0 +1,112 @@
+{
+  "app:reload": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "workspaces:open-modal": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "table-editor-obsidian:format-table": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "sliding-panes-obsidian:toggle-sliding-panes": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "sliding-panes-obsidian:toggle-sliding-panes-stacking": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "sliding-panes-obsidian:toggle-sliding-panes-rotated-headers": [],
+  "sliding-panes-obsidian:toggle-sliding-panes-smooth-animation": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "A"
+    }
+  ],
+  "workspace:close": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F4"
+    }
+  ],
+  "workspace:split-horizontal": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
+    }
+  ],
+  "editor:delete-paragraph": [],
+  "slides:start": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "editor:unfold-all": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "U"
+    }
+  ],
+  "workspace:undo-close-pane": []
+}

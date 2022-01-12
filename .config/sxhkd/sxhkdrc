@@ -2,6 +2,10 @@ r
 # wm independent hotkeys
 #
 
+# Connect/Disconnect headphone
+super + alt + {c,d}
+    bluetoothctl {connect,disconnect} 94:DB:56:7A:C5:2B
+
 # terminal emulator
 super + Return
 	alacritty
@@ -80,8 +84,12 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
+super + {less,greater}
 	bspc desktop -f {prev,next}.local
+
+# Switch to workspace number
+super + {1-9,0}
+	bspc desktop -f '{1,2,3,4,5,6,7,8,9,10}'
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -94,7 +102,8 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-	bspc {desktop -f,node -d} '^{1-9,10}'
+super + shift + {1-9,0}
+	bspc node -d '^{1-9,10}' --follow
 
 #
 # preselect

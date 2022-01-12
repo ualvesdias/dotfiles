@@ -1,0 +1,485 @@
+{
+  "workspaces": {
+    "IndividualDocumentation": {
+      "main": {
+        "id": "a29aa2441bf9ac1e",
+        "type": "split",
+        "children": [
+          {
+            "id": "2a97b33180971b1d",
+            "type": "leaf",
+            "dimension": 17.24,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work/Consulting/EngagementTemplate/0-admin/Execution/IndividualDocumentation/odysseus/_indexes/0000 - index.md",
+                "mode": "preview"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d78e4541ae7b77d5",
+            "type": "split",
+            "dimension": 82.76,
+            "children": [
+              {
+                "id": "55f3ec237ecd79e7",
+                "type": "leaf",
+                "dimension": 33.26885880077369,
+                "pinned": true,
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "Work/Consulting/EngagementTemplate/0-admin/Execution/IndividualDocumentation/odysseus/notes/Tasks Control.md"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "aac68ccb48194002",
+                "type": "split",
+                "dimension": 66.7311411992263,
+                "children": [
+                  {
+                    "id": "340632d0b4ee17e5",
+                    "type": "leaf",
+                    "state": {
+                      "type": "empty",
+                      "state": {}
+                    }
+                  },
+                  {
+                    "id": "8075384957a614cd",
+                    "type": "leaf",
+                    "state": {
+                      "type": "empty",
+                      "state": {}
+                    }
+                  }
+                ],
+                "direction": "vertical"
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "547a151ff4dcb221",
+        "type": "split",
+        "children": [
+          {
+            "id": "44e2f8852c691444",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a9b0d2e1670fd1fe",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8463c26a9a91f689",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "d172cd75cd1e2a93",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Work/Consulting/EngagementTemplate/0-admin/Execution/IndividualDocumentation/odysseus/_indexes/000 - Initial Information.md",
+                    "mode": "preview"
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 336.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "7ebf2a38a49ca104",
+        "type": "split",
+        "children": [
+          {
+            "id": "ca69805ae180cee8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "931418912aa9a4d1",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "6731789b175babc3",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f896ba6a57bb6b22",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5ab42022cf1fe2c3",
+                "type": "leaf",
+                "state": {
+                  "type": "review-queue-list-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "active": "340632d0b4ee17e5"
+    },
+    "ReportWriting": {
+      "main": {
+        "id": "a29aa2441bf9ac1e",
+        "type": "split",
+        "children": [
+          {
+            "id": "7f61ea37fb948c2c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work/Consulting/EngagementTemplate/0-admin/PostEngagement/Report/Relatório.md",
+                "mode": "source"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "8f7d51532597ca5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work/Consulting/EngagementTemplate/0-admin/Execution/IndividualDocumentation/odysseus/web testing guide/WSTG-CONF-05 - Enumerate Infrastructure and Application Admin Interfaces.md",
+                "mode": "preview"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "547a151ff4dcb221",
+        "type": "split",
+        "children": [
+          {
+            "id": "44e2f8852c691444",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a9b0d2e1670fd1fe",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8463c26a9a91f689",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "ada0d8b6216fa473",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Work/Consulting/EngagementTemplate/0-admin/Execution/IndividualDocumentation/odysseus/_indexes/0000 - index.md",
+                    "mode": "preview"
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 469.5
+      },
+      "right": {
+        "id": "7ebf2a38a49ca104",
+        "type": "split",
+        "children": [
+          {
+            "id": "ca69805ae180cee8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "931418912aa9a4d1",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Work/Consulting/EngagementTemplate/0-admin/Execution/IndividualDocumentation/odysseus/web testing guide/WSTG-CONF-05 - Enumerate Infrastructure and Application Admin Interfaces.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "6731789b175babc3",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "active": "8f7d51532597ca5d"
+    },
+    "WebAppTesting": {
+      "main": {
+        "id": "a29aa2441bf9ac1e",
+        "type": "split",
+        "children": [
+          {
+            "id": "9796326745c5911b",
+            "type": "leaf",
+            "dimension": 12.12,
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Work/Consulting/NuBank/0-admin/Execution/IndividualDocumentation/odysseus/web testing template/owasp-kanban.md"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "10f9ca472aa99d9b",
+            "type": "leaf",
+            "dimension": 27.88,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work/Consulting/NuBank/0-admin/Execution/IndividualDocumentation/odysseus/web testing template/WSTG-INFO-01 - Conduct Search Engine Discovery Reconnaissance for Information Leakage.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "d09d9f143d13205e",
+            "type": "leaf",
+            "dimension": 33.68,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work/Consulting/NuBank/0-admin/Execution/IndividualDocumentation/odysseus/notes/web-testing-notes-www.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "59381c156b4a3aaa",
+            "type": "leaf",
+            "dimension": 26.32,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work/Consulting/NuBank/0-admin/Execution/IndividualDocumentation/odysseus/notes/issues found.md",
+                "mode": "source"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "547a151ff4dcb221",
+        "type": "split",
+        "children": [
+          {
+            "id": "44e2f8852c691444",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a9b0d2e1670fd1fe",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8463c26a9a91f689",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "d172cd75cd1e2a93",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Work/Consulting/EngagementTemplate/0-admin/Execution/IndividualDocumentation/odysseus/_indexes/000 - Initial Information.md",
+                    "mode": "preview"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 339.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "7ebf2a38a49ca104",
+        "type": "split",
+        "children": [
+          {
+            "id": "ca69805ae180cee8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "931418912aa9a4d1",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Work/Consulting/NuBank/0-admin/Execution/IndividualDocumentation/odysseus/notes/web-testing-notes-www.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "6731789b175babc3",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f896ba6a57bb6b22",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5ab42022cf1fe2c3",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {}
+                }
+              },
+              {
+                "id": "fa57c4fb726f57e2",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "9d2449a6faf11813",
+                "type": "leaf",
+                "state": {
+                  "type": "review-queue-list-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "active": "d09d9f143d13205e"
+    }
+  },
+  "active": "IndividualDocumentation"
+}

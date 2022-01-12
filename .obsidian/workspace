@@ -1,0 +1,118 @@
+{
+  "main": {
+    "id": "c25b05119f2d0e72",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b2b0f81a9442a86",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "1-recon/tooseguros.com.br/scanning/tools/nuclei/Results.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "547a151ff4dcb221",
+    "type": "split",
+    "children": [
+      {
+        "id": "44e2f8852c691444",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9b0d2e1670fd1fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8463c26a9a91f689",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 301.5
+  },
+  "right": {
+    "id": "7ebf2a38a49ca104",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca69805ae180cee8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "931418912aa9a4d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1-recon/tooseguros.com.br/scanning/tools/nuclei/Results.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "92dc9135e641232b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b9a3f646c7328f49",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9b2b0f81a9442a86",
+  "lastOpenFiles": [
+    "1-recon/tooseguros.com.br/scanning/tools/nuclei/Results.md",
+    "1-recon/educatoo.com.br/scanning/tools/Waybackurls.md",
+    "1-recon/cadastropanseguros.com.br/Not Resolving.md",
+    "1-recon/pancorretora.com.br/scanning/WaybackUrls.md",
+    "1-recon/pannickkey.com.br/Not Resolving.md",
+    "1-recon/panamericanasdeseguro.com.br/Not Resolving.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/_indexes/000 - Initial Information.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/web testing template/Appendix A - Testing Tools Resource.md",
+    "0-admin/Execution/IndividualDocumentation/odysseus/notes/Tasks Control.md",
+    "1-recon/educatoo.com.br/osint/tools/Waybackurls.md"
+  ]
+}

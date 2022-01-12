@@ -6,7 +6,10 @@ set tabpagemax=10000
 set noerrorbells
 set tabstop=4 
 set softtabstop=4
+set cindent
+set pastetoggle=<f11>
 set shiftwidth=4
+set shiftround
 set expandtab
 set smartindent
 set autoindent

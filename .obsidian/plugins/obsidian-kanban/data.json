@@ -1,0 +1,7 @@
+{
+  "new-note-template": "Templates/KanbanTemplate.md",
+  "new-note-folder": "KanbanBoards",
+  "show-checkboxes": true,
+  "hide-tags-in-title": true,
+  "hide-tags-display": true
+}
