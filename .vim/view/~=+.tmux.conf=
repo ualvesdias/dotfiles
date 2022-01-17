@@ -111,6 +111,7 @@ setlocal linebreak
 setlocal nolisp
 setlocal lispwords=
 setlocal nolist
+setlocal listchars=
 setlocal makeencoding=
 setlocal makeprg=
 setlocal matchpairs=(:),{:},[:]
@@ -158,21 +159,23 @@ setlocal termwinscroll=10000
 setlocal termwinsize=
 setlocal textwidth=0
 setlocal thesaurus=
+setlocal thesaurusfunc=
 setlocal undofile
 setlocal undolevels=-123456
 setlocal varsofttabstop=
 setlocal vartabstop=
+setlocal virtualedit=
 setlocal wincolor=
 setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 379 - ((28 * winheight(0) + 28) / 57)
+let s:l = 353 - ((42 * winheight(0) + 27) / 54)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 379
-normal! 036|
+keepjumps 353
+normal! 032|
 let &g:so = s:so_save | let &g:siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :
