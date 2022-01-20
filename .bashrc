@@ -154,8 +154,13 @@ function d64 {
 }
 
 function randstr {
-	strings /dev/urandom | grep -o '[[:alnum:][:punct:]]' | head -n $1 | tr -d '\n'
-	echo
+	if [ $# -eq 0 ]; then
+	    input=$(</dev/stdin)
+	else
+		input=$1
+	fi
+
+	strings /dev/urandom | grep -o '[[:alnum:][:punct:]]' | head -n $input | tr -d '\n'
 }
 
 function crtsh {

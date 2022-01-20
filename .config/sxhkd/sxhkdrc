@@ -2,6 +2,14 @@ r
 # wm independent hotkeys
 #
 
+# Generate a random password and show it
+super + alt + p
+    ~/.local/bin/randompassword.sh
+
+# Convert image links in markdown files
+super + alt + l
+     ~/.local/bin/replacelinks.sh
+
 # Connect/Disconnect headphone
 super + alt + {c,d}
     bluetoothctl {connect,disconnect} 94:DB:56:7A:C5:2B

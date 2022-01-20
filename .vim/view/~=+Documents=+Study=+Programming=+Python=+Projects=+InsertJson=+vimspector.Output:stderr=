@@ -143,7 +143,7 @@ setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
 setlocal spelloptions=
-setlocal statusline=%!airline#statusline(5)
+setlocal statusline=%!airline#statusline(6)
 setlocal suffixesadd=
 setlocal noswapfile
 setlocal synmaxcol=3000
