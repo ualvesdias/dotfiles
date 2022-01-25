@@ -25,7 +25,6 @@ alias lr="exa -lR  --classify --sort=ext --group-directories-first -S --color-sc
 alias pyweb="python3 -m http.server "
 alias untar="tar -zxvf"
 alias wget="wget -c"
-alias nmap="grc nmap"
 alias cmds="cat $HOME/.tmux.conf | egrep '^cmd_'"
 alias tcpdump="grc tcpdump"
 alias kill_socks="ps aux | egrep 'ssh -N -f -D' | head -n1 | awk '{ print  }' | xargs kill &> /dev/null"
