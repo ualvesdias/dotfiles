@@ -192,23 +192,27 @@ function hidden_ssh {
 	ssh -o UserKnownHostsFile=/dev/null -T $1@$2 "bash -i"
 }
 
+ENCFOLDER="~/Documents/Work/Engagements"
+
 function new_container {
-        dd if=/dev/urandom of=~/Engagements/containers/$1 bs=1M count=51200 iflag=fullblock
-        sudo cryptsetup luksFormat ~/Engagements/containers/$1
-        sudo cryptsetup luksOpen ~/Engagements/containers/$1 $1
+    {
+        dd if=/dev/urandom of=$ENCFOLDER/containers/$1 bs=1M count=4096 iflag=fullblock
+        sudo cryptsetup luksFormat $ENCFOLDER/containers/$1
+        sudo cryptsetup luksOpen $ENCFOLDER/containers/$1 $1
         sudo mkfs.ext4 /dev/mapper/$1
         sudo cryptsetup luksClose $1
-        mkdir -p ~/Engagements/$1
+        mkdir -p $ENCFOLDER/$1
+    } || exit 1
 }
 
 function mount_enc {
-        sudo cryptsetup luksOpen ~/Engagements/containers/$1 $1
-        sudo mount -t ext4 /dev/mapper/$1 ~/Engagements/$1
-        sudo chown ${USER} ~/Engagements/$1
+        sudo cryptsetup luksOpen $ENCFOLDER/containers/$1 $1
+        sudo mount -t ext4 /dev/mapper/$1 $ENCFOLDER/$1
+        sudo chown ${USER} $ENCFOLDER/$1
 }
 
 function umount_enc {
-        sudo umount ~/Engagements/$1
+        sudo umount $ENCFOLDER/$1
         sudo cryptsetup luksClose $1
 }
 
@@ -230,6 +234,28 @@ function hssh {
 	if ! ssh -o UserKnownHostsFile=/dev/null -p $3 -t $1@$2 'bash --init-file <(echo "script -f /dev/null") -i'; then
 		echo 'Usage: hssh <user> <host> <port>'
 	fi
+}
+
+function sshgw {
+    {
+	# Starts the tunnel connectionin background. Creates a tun interface in each end
+	echo 'Starting SSH tunnel...'
+	sudo ip route add 52.67.121.184 via 192.168.68.1 dev wlp59s0  
+	sudo ssh "$1" -S '~/.ssh/multiplex/%r@%h:%p' -o ControlPersist=2m -i /home/odysseus/.ssh/id_odysseus -f -N -w "$4:$4" && echo "Tunnel initiated. Interface tun$4 created."
+	sleep 10
+	# Sets up the ip address for the interface, brings it up and adds the route to the internal network
+	sudo ip addr add "$2/32" peer "$3" dev "tun$4" && echo "IP address $2 set up for tun$4."
+	sudo ip link set "tun$4" up && echo "Interface tun$4 is up."
+	
+	# Sets up the ip address for the interface, brings it up and adds a iptables rule for NAT
+	ssh "$1" -i /home/odysseus/.ssh/id_odysseus -S '~/.ssh/multiplex/%r@%h:%p' -o ControlPersist=2m  "sleep 5; ip addr add \"$3/32\" peer \"$2\" dev \"tun$4\"; ip link set \"tun$4\" up; echo 1 > /proc/sys/net/ipv4/ip_forward; iptables -t nat -A POSTROUTING -s \"$2\" -o \"$5\" -j MASQUERADE" && echo "Remote interface tun$4 added and set up."
+
+	ping -c4 192.168.42.20
+
+	#sudo route del default
+	sudo ip route add default metric 90 via "$3" && echo "Default gateway changed do $3."
+	
+} && echo "The VPN over SSH tunnel is ready." || echo "Usage: sshgw <root@host> <local-ip> <remote-ip> <tun-number> <remote-iface>"
 }
 
 function sshtunnel {

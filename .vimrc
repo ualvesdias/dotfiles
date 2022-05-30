@@ -33,6 +33,7 @@ set cursorline
 set conceallevel=2
 set hidden
 set scrolloff=10
+set listchars=tab:▷▷⋮
 
 " }}}
 
@@ -113,6 +114,8 @@ nmap <leader>ev :tabedit $MYVIMRC<CR>
 " Plugins via Plug manager {{{
 call plug#begin('~/.vim/plugged')
 
+Plug 'arcticicestudio/nord-vim'
+Plug 'itchyny/lightline.vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tyrannicaltoucan/vim-deep-space'
@@ -192,16 +195,19 @@ autocmd FileType rust let b:coc_root_patterns = ['Cargo.toml','.git']
 
 " Airline configs {{{
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='deep_space'
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline_theme='deep_space'
 
 " }}}
 
 " Color Scheme {{{
 
-set background=dark
+"set background=dark
 set termguicolors
-colorscheme deep-space
+colorscheme nord
+let g:lightline = { 'colorscheme': 'nord' }
+let g:nord_uniform_status_lines = 1
+let g:nord_italic_comments = 1
 
 " }}}
 

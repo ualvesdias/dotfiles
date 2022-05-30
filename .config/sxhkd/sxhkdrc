@@ -1,4 +1,3 @@
-r
 # wm independent hotkeys
 #
 
@@ -6,8 +5,16 @@ r
 super + alt + p
     ~/.local/bin/randompassword.sh
 
+# Open default environment
+super + alt + d
+    bspc desktop --focus 1
+    firefox https://web.whatsapp.com &
+    telegram &
+    bspc desktop --focus 2
+    spotify &
+
 # Convert image links in markdown files
-super + alt + l
+super + alt + i
      ~/.local/bin/replacelinks.sh
 
 # Connect/Disconnect headphone
@@ -92,7 +99,7 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
-super + {less,greater}
+super + alt+ {h,l}
 	bspc desktop -f {prev,next}.local
 
 # Switch to workspace number
