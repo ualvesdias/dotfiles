@@ -23,10 +23,9 @@ super + alt + {c,d}
 
 # terminal emulator
 super + Return
-	alacritty
+	alacritty 
 
 # renger file manager
-
 super + r
     alacritty --hold -e ranger
 

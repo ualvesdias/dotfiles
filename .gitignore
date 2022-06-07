@@ -3,3 +3,4 @@
 !.local/bin/randompassword.sh
 !.local/bin/replacelinks.sh
 !.local/bin/startvpn.sh
+.vim/view/*
