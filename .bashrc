@@ -352,7 +352,7 @@ REVRS=$( tput rev )
 
 if [ "$PS1" ]; then
   # PS1="[\u@\h:\l \W]\\$ "
-  PS1="\[$FGYLO\]╭──\[$RESET\][\[$FGRED\]\u\[$FGMAG\]@\[$FGGRN\]\h\[$RESET\]]-[\[$FGBLU\]\W\[$RESET\]]\n\[$FGYLO\]╰─➤\[$RESET\] \\\$ "
+  PS1="\[$FGYLO\]╭── [\[$RESET\]\[$FGRED\]\u\[$FGMAG\]@\[$FGGRN\]\h\[$RESET\]\[$FGYLO\]]-[\[$FGBLU\]\W\[$RESET\]\[$FGYLO\]]\n╰─➤\[$RESET\] \[$FGRED\]\\\$\[$RESET\] "
 fi
 export EDITOR=vim
 export VISUAL=vim
@@ -363,7 +363,7 @@ source "$HOME/.cargo/env"
 export PATH="/home/odysseus/.local/bin:$PATH"
 export PATH="/home/odysseus/bin:$PATH"
 export PATH="/usr/local/texlive/2020/bin/x86_64-linux:$PATH"
-export PATH="~/go/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
 export PATH="/home/odysseus/.local/bin/:$PATH"
 export MANPATH="/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH"
@@ -395,4 +395,3 @@ if [[ -f ~/.bash-preexec.sh ]]; then
     precmd_functions=(precmd_timestamp ${precmd_functions[@]})
     source ~/.bash-preexec.sh
 fi
-. "$HOME/.cargo/env"
